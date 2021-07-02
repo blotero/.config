@@ -128,6 +128,7 @@ screens = [
                 widget.GroupBox(),
                 widget.Prompt(),
                 widget.WindowName(),
+                widget.CPU(),
 		widget.Battery(foreground="#497092" , backround="#ffffff"),
 		widget.ThermalSensor(),
 		widget.Memory(foreground="#497092"),

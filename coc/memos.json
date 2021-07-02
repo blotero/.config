@@ -349,7 +349,8 @@
       },
       "sysPrefix": "/usr",
       "fileHash": "7d953c49de37bbb29e546d6c57374aea78f9c9ae3077feedfbb35b951d4abde60872d7d7391d94f11ce728f93cd20d775a98684d50a580bb4959d5f96c0be703",
-      "type": "Unknown"
+      "type": "Unknown",
+      "cachedEntry": true
     },
     "preferredGlobalPyInterpreter": {
       "architecture": 3,
@@ -891,6 +892,7 @@
       "sysPrefix": "/usr",
       "fileHash": "7d953c49de37bbb29e546d6c57374aea78f9c9ae3077feedfbb35b951d4abde60872d7d7391d94f11ce728f93cd20d775a98684d50a580bb4959d5f96c0be703",
       "type": "Unknown",
+      "cachedEntry": true,
       "displayName": "Python 3.9.5 64-bit"
     },
     "/usr/bin/python.interpreter.Details.v7": {
@@ -1043,6 +1045,35 @@
     "INTERPRETERS_CACHE_v3_PipEnvService:e9b5d284b72e8711d78d03acff695c16": [],
     "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:e9b5d284b72e8711d78d03acff695c16": [],
     "autoSelectedWorkspacePythonInterpreter-/home/brandon/FEET-GUI": {
+      "architecture": 3,
+      "path": "/usr/bin/python",
+      "version": {
+        "options": {
+          "loose": false,
+          "includePrerelease": false
+        },
+        "loose": false,
+        "raw": "3.9.5-final",
+        "major": 3,
+        "minor": 9,
+        "patch": 5,
+        "prerelease": [
+          "final"
+        ],
+        "build": [],
+        "version": "3.9.5-final"
+      },
+      "sysPrefix": "/usr",
+      "fileHash": "7d953c49de37bbb29e546d6c57374aea78f9c9ae3077feedfbb35b951d4abde60872d7d7391d94f11ce728f93cd20d775a98684d50a580bb4959d5f96c0be703",
+      "type": "Unknown"
+    },
+    "INTERPRETERS_CACHE_v3_PipEnvService": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService": []
+  },
+  "coc-python|/home/brandon/.config": {
+    "INTERPRETERS_CACHE_v3_PipEnvService:53878c0ce803fee5781d42abc5785ad3": [],
+    "INTERPRETERS_CACHE_v3_WorkspaceVirtualEnvService:53878c0ce803fee5781d42abc5785ad3": [],
+    "autoSelectedWorkspacePythonInterpreter-/home/brandon/.config": {
       "architecture": 3,
       "path": "/usr/bin/python",
       "version": {
