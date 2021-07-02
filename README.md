@@ -1,0 +1,2 @@
+# .config
+Symply my dotfiles.
