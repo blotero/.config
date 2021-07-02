@@ -1,0 +1,6 @@
+[Default Applications]
+x-scheme-handler/msteams=teams.desktop
+
+[Added Associations]
+application/zip=pcmanfm.desktop;thunar.desktop;
+application/x-designer=designer.desktop;
