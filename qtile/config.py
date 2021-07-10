@@ -66,7 +66,8 @@ keys = [
 
     #Some quick fixes
     Key([mod, "control"], "x", lazy.spawn("xset r rate 200 50"), desc="My favorite repkey"),
-    Key([mod, "control"], "s", lazy.spawn("xrandr --auto && xrandr --output HDMI-1 --right-of eDP-1"), desc="Set second hdmi screen"),
+    Key([mod, "control"], "s", lazy.spawn("xrandr --auto"), desc="Autoset xrandr"),
+    Key([mod, "shift"], "s", lazy.spawn("xrandr --output HDMI-1 --right-of eDP-1"), desc="Autoset xrandr"),
 ]
 
 groups = [Group(i) for i in "123456789"]
@@ -88,6 +89,7 @@ for i in groups:
         Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
         Key([], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 5%- unmute")),
         Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 5%+ unmute")),
+        Key([mod, "control"], "+", lazy.spawn("amixer set Master 5%+ unmute")),
 
         #Backlight
         Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 10")),
