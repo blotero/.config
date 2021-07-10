@@ -89,7 +89,6 @@ for i in groups:
         Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
         Key([], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 5%- unmute")),
         Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 5%+ unmute")),
-        Key([mod, "control"], "+", lazy.spawn("amixer set Master 5%+ unmute")),
 
         #Backlight
         Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 10")),
