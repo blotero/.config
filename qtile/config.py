@@ -68,7 +68,8 @@ keys = [
     Key([mod, "control"], "x", lazy.spawn("xset r rate 200 50"), desc="My favorite repkey"),
     Key([mod, "control"], "s", lazy.spawn("xrandr --auto"), desc="Autoset xrandr"),
     Key([mod, "shift"], "s", lazy.spawn("xrandr --output HDMI-1 --right-of eDP-1"), desc="Autoset xrandr"),
-]
+    Key([mod], "z", lazy.spawn("xset r rate 200 50"), desc="Set key speed"),
+    ]
 
 groups = [Group(i) for i in "123456789"]
 
@@ -89,12 +90,14 @@ for i in groups:
         Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
         Key([], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 5%- unmute")),
         Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 5%+ unmute")),
+        Key([mod,"control"], "plus", lazy.spawn("amixer set Master 5%+ unmute"), desc="Rise volume"),
+        Key([mod,"control"], "minus", lazy.spawn("amixer set Master 5%- unmute"), desc="Lower volume"),
 
         #Backlight
         Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 10")),
-        Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 10"))
-        #Key([mod , "shift"], "+", lazy.spawn("amixer set Master 1%+ unmute")),
-        #Key([mod , "shift"], "-", lazy.spawn("amixer set Master 1%- unmute")),
+        Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 10")),
+        Key([mod , "shift"], "plus", lazy.spawn("xbacklight -inc 10")),
+        Key([mod , "shift"], "minus", lazy.spawn("xbacklight -dec 10"))
         
     ])
     ...
@@ -130,11 +133,11 @@ screens = [
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.CPU(),
-		widget.Battery(foreground="#497092" , backround="#ffffff"),
-		widget.ThermalSensor(),
-		widget.Memory(foreground="#497092"),
-		widget.Net(),
-		widget.Volume(foreground="#497092"),
+                widget.Battery(foreground="#497092" , backround="#ffffff"),
+                widget.ThermalSensor(),
+                widget.Memory(foreground="#497092"),
+                widget.Net(),
+                widget.Volume(foreground="#497092"),
                 widget.Clock(format='%m-%d %a %I:%M %p'),
             ],
             24,
