@@ -22,9 +22,5 @@ set undolevels=1000
 set backspace=indent,eol,start	
 
 call plug#begin('~/.local/share/nvim/plugged')
-
-"Plug 'davidhalter/jedi-vim'
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"Plug 'zchee/deoplete-jedi'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
