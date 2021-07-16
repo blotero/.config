@@ -1,6 +1,6 @@
 # GIMP gimp-text-tool options
 
-(palette "Histórico de color")
+(palette "Standard")
 (font "Sans-serif")
 
 # end of gimp-text-tool options

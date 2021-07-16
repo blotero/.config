@@ -1,6 +1,6 @@
 # GIMP gimp-gradient-tool options
 
-(gradient "Primer plano a fondo (RGB)")
+(gradient "Standard")
 (brush-size 51)
 (brush-hardness 0.5)
 

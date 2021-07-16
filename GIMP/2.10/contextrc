@@ -6,8 +6,8 @@
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")
 (pattern "Pine")
-(gradient "Primer plano a fondo (RGB)")
-(palette "Histórico de color")
+(gradient "Standard")
+(palette "Standard")
 (font "Sans-serif")
 (tool-preset "Core Pointer")
 

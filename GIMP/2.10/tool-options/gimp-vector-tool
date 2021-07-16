@@ -3,7 +3,7 @@
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (pattern "Pine")
-(gradient "Primer plano a fondo (RGB)")
-(palette "Histórico de color")
+(gradient "Standard")
+(palette "Standard")
 
 # end of gimp-vector-tool options

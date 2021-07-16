@@ -67,8 +67,9 @@ keys = [
     #Some quick fixes
     Key([mod, "control"], "x", lazy.spawn("xset r rate 200 50"), desc="My favorite repkey"),
     Key([mod, "control"], "s", lazy.spawn("xrandr --auto"), desc="Autoset xrandr"),
-    Key([mod, "shift"], "s", lazy.spawn("xrandr --output HDMI-1 --right-of eDP-1"), desc="Autoset xrandr"),
+    Key([mod, "shift"], "s", lazy.spawn("xrandr --output HDMI-1 --right-of eDP-1"), desc="Set xrandr second screen"),
     Key([mod], "z", lazy.spawn("xset r rate 200 50"), desc="Set key speed"),
+    Key([mod], "c", lazy.spawn("cpupower-gui"), desc="Cpupower gui"),
     ]
 
 groups = [Group(i) for i in "123456789"]
@@ -88,16 +89,19 @@ for i in groups:
         #     desc="move focused window to group {}".format(i.name)),
         # Sound
         Key([], "XF86AudioMute", lazy.spawn("amixer -q set Master toggle")),
-        Key([], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 5%- unmute")),
-        Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 5%+ unmute")),
-        Key([mod,"control"], "plus", lazy.spawn("amixer set Master 5%+ unmute"), desc="Rise volume"),
-        Key([mod,"control"], "minus", lazy.spawn("amixer set Master 5%- unmute"), desc="Lower volume"),
+        Key([], "XF86AudioRaiseVolume", lazy.spawn("amixer set Master 2%+ unmute"),desc="Rise volume" ),
+        Key([], "XF86AudioLowerVolume", lazy.spawn("amixer set Master 2%- unmute"), desc="Lower volume"),
+        Key([mod,"control"], "plus", lazy.spawn("amixer set Master 2%+ unmute"), desc="Rise volume with my keybinding"),
+        Key([mod,"control"], "minus", lazy.spawn("amixer set Master 2%- unmute"), desc="Lower volume with my keybinding"),
 
         #Backlight
-        Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 10")),
-        Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 10")),
+        Key([], "XF86MonBrightnessUp", lazy.spawn("xbacklight -inc 5")),
+        Key([], "XF86MonBrightnessDown", lazy.spawn("xbacklight -dec 5")),
         Key([mod , "shift"], "plus", lazy.spawn("xbacklight -inc 10")),
-        Key([mod , "shift"], "minus", lazy.spawn("xbacklight -dec 10"))
+        Key([mod , "shift"], "minus", lazy.spawn("xbacklight -dec 10")),
+
+        #Os keys
+        Key([mod , "shift", "control"], "x", lazy.spawn("shutdown now"))
         
     ])
     ...
