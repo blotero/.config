@@ -5,6 +5,9 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 
+from powerline.bindings.qtile.widget import PowerlineTextBox
+
+
 mod = "mod4"
 terminal = guess_terminal()
 
@@ -103,7 +106,7 @@ for i in groups:
         Key([mod , "shift"], "minus", lazy.spawn("xbacklight -dec 10")),
 
         #Os keys
-        Key([mod , "shift", "control"], "x", lazy.spawn("shutdown now"))
+        Key([mod , "shift", "control"], "x", lazy.spawn("shutdown now")),
         
     ])
     ...
