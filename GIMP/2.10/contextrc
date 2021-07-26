@@ -2,6 +2,7 @@
 
 (tool "gimp-move-tool")
 (paint-info "gimp-paintbrush")
+(foreground (color-rgb 0.12549020349979401 0.18823529779911041 0.31372550129890442))
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "100% Opaque")

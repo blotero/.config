@@ -62,12 +62,15 @@ keys = [
 
     Key([mod, "control"], "r", lazy.restart(), desc="Restart Qtile"),
     Key([mod, "control"], "q", lazy.shutdown(), desc="Shutdown Qtile"),
-    Key([mod], "r", lazy.spawncmd(), desc="Spawn a command using a prompt widget"),
+    Key([mod], "r", lazy.spawn("dmenu_run"), desc="Spawn a command using dmenu"),
 
     # Some of My Applications
     Key([mod], "b", lazy.spawn("firefox"), desc="Firefox"),
     Key([mod], "v", lazy.spawn("pavucontrol"), desc="pavucontrol"),
     Key([mod], "f", lazy.spawn("thunar"), desc="Thunar"),
+    Key([mod], "m", lazy.spawn("firefox mail.google.com"), desc="Launch email in firefox"),
+    Key([mod], "g", lazy.spawn("alacritty -e gotop"), desc="Launch gotop"),
+    Key([mod, "shift"], "f", lazy.spawn("alacritty -e ranger"), desc="Launch ranger"),
 
     #Some quick fixes
     Key([mod, "control"], "x", lazy.spawn("xset r rate 200 50"), desc="My favorite repkey"),
@@ -75,6 +78,12 @@ keys = [
     Key([mod, "shift"], "s", lazy.spawn("xrandr --output HDMI-1 --right-of eDP-1"), desc="Set xrandr second screen"),
     Key([mod], "z", lazy.spawn("xset r rate 200 50"), desc="Set key speed"),
     Key([mod], "c", lazy.spawn("cpupower-gui"), desc="Cpupower gui"),
+
+    #Some of my temporary tasks
+    Key([mod, "control"], "f", lazy.spawn("alacritty -e 'nvim /home/brandon/FEET-GUI/main.py'  && alacritty -e  'nvim /home/brandon/FEET-GUI/segment.py' "), desc="My feet-gui workspace"),
+    Key([mod, "control"], "b", lazy.spawn("bluetoothctl connect E3:78:AF:00:FB:F7"), desc="Connect my speaker"),
+
+
     ]
 
 groups = [Group(i) for i in "123456789"]
@@ -113,15 +122,16 @@ for i in groups:
 layouts = [
     layout.Columns(border_focus_stack='#d75f5f'),
     layout.Max(),
+    layout.Stack(num_stacks=2),
+    layout.Floating(),
+    layout.TreeTab(),
     # Try more layouts by unleashing below layouts.
-    # layout.Stack(num_stacks=2),
     # layout.Bsp(),
     # layout.Matrix(),
     # layout.MonadTall(),
     # layout.MonadWide(),
     # layout.RatioTile(),
     # layout.Tile(),
-    # layout.TreeTab(),
     # layout.VerticalTile(),
     # layout.Zoomy(),
 ]
@@ -144,8 +154,7 @@ screens = [
                 widget.CPU(),
                 widget.Battery(foreground="#497092" , backround="#ffffff"),
                 widget.ThermalSensor(),
-                widget.Memory(foreground="#497092"),
-                widget.Net(),
+                widget.Net(use_bits=True),
                 widget.Volume(foreground="#497092"),
                 widget.Clock(format='%m-%d %a %I:%M %p'),
             ],

@@ -5,6 +5,8 @@ image/jpeg=org.nomacs.ImageLounge.desktop
 [Added Associations]
 application/zip=pcmanfm.desktop;thunar.desktop;
 application/x-designer=designer.desktop;
-image/png=org.nomacs.ImageLounge.desktop;
+image/png=gimp.desktop;org.nomacs.ImageLounge.desktop;
 image/gif=org.nomacs.ImageLounge.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
+audio/mpeg=firefox.desktop;
+text/x-python=vim.desktop;nvim.desktop;
