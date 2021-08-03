@@ -152,6 +152,7 @@ screens = [
                 widget.Prompt(),
                 widget.WindowName(),
                 widget.CPU(),
+                widget.Memory(),
                 widget.Battery(foreground="#497092" , backround="#ffffff"),
                 widget.ThermalSensor(),
                 widget.Net(use_bits=True),

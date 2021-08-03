@@ -1,6 +1,5 @@
 set number
 set number relativenumber
-set linebreak	
 set showbreak=+++ 	
 set showmatch	
 set visualbell
@@ -20,6 +19,8 @@ set ruler
 
 set undolevels=1000
 set backspace=indent,eol,start	
+let g:python3_host_prog = '/usr/bin/python'
+
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}

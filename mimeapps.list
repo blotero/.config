@@ -10,3 +10,4 @@ image/gif=org.nomacs.ImageLounge.desktop;
 image/jpeg=org.nomacs.ImageLounge.desktop;
 audio/mpeg=firefox.desktop;
 text/x-python=vim.desktop;nvim.desktop;
+application/pdf=apvlv.desktop;firefox.desktop;

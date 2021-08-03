@@ -1,4 +1,4 @@
-; gimp GtkAccelMap rc-file         -*- scheme -*-
+; gimp-2.10 GtkAccelMap rc-file         -*- scheme -*-
 ; this file is an automated accelerator map dump
 ;
 ; (gtk_accel_path "<Actions>/tools/tools-rotate-image-arbitrary" "")
@@ -43,8 +43,8 @@
 ; (gtk_accel_path "<Actions>/layers/layers-color-tag-brown" "")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-imagemap" "")
 ; (gtk_accel_path "<Actions>/filters/filters-recent-menu" "")
-; (gtk_accel_path "<Actions>/layers/layers-text-along-vectors" "")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-map-object" "")
+; (gtk_accel_path "<Actions>/layers/layers-text-along-vectors" "")
 ; (gtk_accel_path "<Actions>/view/view-zoom-revert" "grave")
 ; (gtk_accel_path "<Actions>/dialogs/dialogs-symmetry" "")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-script-fu-console" "")
@@ -1086,8 +1086,8 @@
 ; (gtk_accel_path "<Actions>/view/view-move-to-screen-menu" "")
 ; (gtk_accel_path "<Actions>/documents/documents-copy-location" "")
 ; (gtk_accel_path "<Actions>/view/view-open-display" "")
-; (gtk_accel_path "<Actions>/plug-in/file-tiff-save2" "")
 ; (gtk_accel_path "<Actions>/layers/layers-linked" "")
+; (gtk_accel_path "<Actions>/plug-in/file-tiff-save2" "")
 ; (gtk_accel_path "<Actions>/tool-options/tool-options-save-preset-menu" "")
 ; (gtk_accel_path "<Actions>/context/context-brush-spacing-maximum" "")
 ; (gtk_accel_path "<Actions>/images/images-delete" "")
@@ -1242,6 +1242,7 @@
 ; (gtk_accel_path "<Actions>/dockable/dockable-tab-style-automatic" "")
 ; (gtk_accel_path "<Actions>/layers/layers-mask-edit" "")
 ; (gtk_accel_path "<Actions>/windows/windows-show-tabs" "")
+; (gtk_accel_path "<Actions>/plug-in/file-print-gutenprint" "")
 ; (gtk_accel_path "<Actions>/layers/layers-mask-add-last-values" "")
 ; (gtk_accel_path "<Actions>/plug-in/file-raw-save" "")
 ; (gtk_accel_path "<Actions>/image/image-merge-layers" "<Primary>m")
